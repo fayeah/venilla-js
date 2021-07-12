@@ -1,0 +1,44 @@
+@import "../css/variables.css";
+@import "../css/nav.css";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root li {
+  list-style: none;
+}
+
+#root {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+}
+
+.left,
+.right {
+  height: 100%;
+}
+
+.right {
+  flex-grow: 1;
+}
+
+.right>header {
+  height: 50px;
+  background-color: lightsteelblue;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.right>header .dedent-icon {
+  cursor: pointer;
+}
+
+.content {
+  background-color: white;
+}

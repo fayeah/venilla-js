@@ -1,0 +1,65 @@
+.left {
+  width: 200px;
+  background-color: var(--nav-bg);
+  transition: all 0.4s ease;
+  padding: 10px 0 0;
+  color: rgb(180, 182, 189);
+  font-size: 14px;
+}
+
+.left span.hide, .arrow.hide {
+  display: none;
+}
+
+.left>.logo {
+  margin-left: 8px;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.left>.logo span {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.left>.menu {
+  margin-top: 50px;
+  padding: 10px 0;
+}
+
+.left>.menu i {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;;
+}
+
+/* why the following not work?? */
+/* .left>.menu i:nth-child(1) { */
+.left>.menu .arrow {
+  float: right;
+}
+
+.left>.menu .menu-item.toggled  > .arrow {
+  transform: rotate(180deg);
+}
+
+.left>.menu .menu-item.toggled + ul .child-menu-item {
+  display: block;
+}
+
+.left>.menu .menu-item {
+  cursor: pointer;
+}
+
+.left>.menu .menu-item:hover, .menu-item:active {
+  background-color: rgb(46, 51, 68);
+  color: rgb(255, 255, 255);
+}
+
+.left>.menu .child-menu-item {
+  display: none;
+  height: 30px;
+  line-height: 30px;
+  padding-left: 40px;
+}
